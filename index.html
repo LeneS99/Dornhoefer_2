@@ -21,10 +21,6 @@
   <!--  eigenes CSS Stylesheet -->
   <link href="styles/main.css" rel="stylesheet">
 
-  <!-- Jquery -->
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.js"></script>
-
 </head>
 
 <body>
@@ -40,10 +36,10 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a href="#leistungen">Leistungen</a></li>
-          <li><a href="#überuns">Über uns</a></li>
-          <li><a href="#kunden">Kunden</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#leistungen" class="slide-section">Leistungen</a></li>
+          <li><a href="#überuns" class="slide-section">Über uns</a></li>
+          <li><a href="#referenzen" class="slide-section">Referenzen</a></li>
+          <li><a href="#kontakt" class="slide-section">Kontakt</a></li>
         </ul>
       </div>
     </nav>
@@ -226,8 +222,8 @@
   <!-- </section> -->
 
   <!-- Kunden -->
-  <section id="kunden" class="grid-center">
-    <h1 class="col-12 ueberschrift centered">Kunden</h1>
+  <section id="referenzen" class="grid-center">
+    <h1 class="col-12 ueberschrift centered">Referenzen</h1>
     <div class="grid sectionrow_customer">
       <div class="customer_circle grid-center-middle gopro">
       </div>
@@ -277,6 +273,12 @@
   </footer>
 
   <!-- Scripte -->
+  <!-- Jquery -->
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="script.js">
+
+  </script>
   <script type="text/javascript">
 
     $(document).ready(function(){
@@ -286,4 +288,5 @@
     });
 
   </script>
+
 </body>
