@@ -1,0 +1,50 @@
+<!-- DOCTYPE html -->
+<head>
+  <!-- Metadaten für eine responsive Webseite -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- externe CSS Stylesheets (bspw. GoogleFonts)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.0/gridlex.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro" rel="stylesheet">
+
+  <!--  eigenes CSS Stylesheet -->
+  <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Menü -->
+  <header>
+    <nav id="home" class="grid-middle">
+      <a href="index.html#home" class="col-3">
+        <img src="images/logo.jpg" alt="" class="logo">
+        <img src="images/min_logo.jpg" alt="" class="min_logo">
+      </a>
+      <div class="col-7 topnav right">
+        <a href="index.html#leistungen" class="col-2 centered menu">Leistungen</a>
+        <a href="index.html#überuns" class="col-2 centered menu">Über uns</a>
+        <a href="index.html#team" class="col-2 centered menu">Team</a>
+        <a href="index.html#kunden" class="col-2 centered menu">Kunden</a>
+        <a href="index.html#kontakt" class="col-2 centered">Kontakt</a>
+        <a href="javascript:void(0);" class="navicon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Impressum -->
+  <section id="impressum" class="grid-center">
+    <h1 class="col-12 ueberschrift centered">Impressum</h1>
+  </section>
+  <!-- Footer -->
+  <footer class="grid-middle">
+    <div class="col-2">
+      <p>&copy; Dornhöfer</p>
+    </div>
+    <div class="col-2">
+      <a href="#">Impressum</a>
+    </div>
+  </footer>
+</body>
