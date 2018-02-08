@@ -94,6 +94,15 @@ img{
 
 /* --- MODULAR STYLES ----*/
 
+.h1_border_bottom{
+  width: 79px;
+  height: 0px;
+  border-bottom: #000000 1px solid;
+  margin-left: 47%;
+  margin-top: -1%;
+}
+
+
 /* --- SECTION STYLES ----*/
 
 /* --- ALLGEMEINES STYLING NAV ----*/
@@ -224,10 +233,6 @@ nav :hover{
 
 
 /* ALLGEMEINES STYLING DIENSTLEISTUNG */
-
-/* #Leistungen{
-  padding-top: 6%;
-} */
 
 .container{
   padding-top: 6%;
@@ -471,6 +476,18 @@ h1.ueberschrift{
   url('../images/GoogleMapsHintergrund.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#kontakt .ueberschrift{
+  color: white;
+}
+
+.h1_border_bottom_kontakt{
+  width: 79px;
+  height: 0px;
+  border-bottom: #FFFFFF 1px solid;
+  margin-left: 47%;
+  margin-top: -5.4%;
 }
 
 .darkblue_bg{
