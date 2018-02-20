@@ -130,7 +130,6 @@ nav ul{
   padding: 0;
   text-align: right;
   margin: 0;
-  transition: 1s;
 }
 
 
@@ -231,8 +230,9 @@ nav :hover{
 /* ALLGEMEINES STYLING DIENSTLEISTUNG */
 
 .container{
-  padding-top: 5.4%;
+  padding-top: 4.8rem;
 }
+
 
 .sectionrow{
   margin-top: 1%;
@@ -253,11 +253,12 @@ nav :hover{
 .beschreibung_bg{
   height: 90%;
   filter: none;
+  overflow: hidden;
 }
 
 .icon{
   width: 4%;
-  margin-left: 48%;
+  margin: 0 auto;
   margin-top: 2%;
 }
 
@@ -274,13 +275,115 @@ nav :hover{
   width: 79px;
   height: 0px;
   border-bottom: #b7b7b7 1px solid;
-  margin-left: 44%;
+  margin: 0 auto;
 }
 
-.beschreibung_text p, ul{
+.beschreibung_text p, .beschreibung_text ul{
   padding: 3%;
   text-align: center;
   font-size: 18px;
+}
+
+@media (max-width: 1169px){
+  .beschreibung_text p{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 990px) {
+  .beschreibung_text p{
+    font-size: 15.5px;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  .ueberschrift{
+    margin-top: 4%;
+  }
+}
+
+@media(max-width: 900px){
+  .left_pic, .right_pic{
+    height: 40%;
+  }
+
+  .ueberschrift{
+    font-size: 20px;
+    margin-top: 3%;
+  }
+
+  .beschreibung_text p{
+    font-size: 14px;
+  }
+
+  .icon{
+    display: none;
+  }
+}
+
+@media(max-width: 820px){
+  .background_image_merch_links, .background_image_pman_rechts, .background_image_log_links{
+    display: none;
+  }
+
+  .left_pic.description_tile, .right_pic.description_tile{
+    float: none;
+    width: 100%;
+    height: 41%;
+  }
+
+  .icon{
+    width: 4%;
+    display: block;
+  }
+
+  .ueberschrift{
+    font-size: 19px;
+    margin-top: 0%;
+  }
+
+  .beschreibung_text p{
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 580px){
+
+  .container{
+    padding-top: 2.9rem;
+  }
+
+  .background_image_merch_links, .background_image_pman_rechts, .background_image_log_links{
+    display: none;
+  }
+
+  .left_pic.description_tile, .right_pic.description_tile{
+    float: none;
+    width: 100%;
+    height: 41%;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  .ueberschrift.centered{
+    margin-top: 3%;
+    font-size: 18px;
+  }
+
+  .beschreibung_text p{
+    font-size: 15px;
+  }
+
+}
+
+@media(max-width: 486px){
+  .beschreibung_text p{
+    font-size: 13.5px;
+  }
 }
 
 /* INDIVIDUELLES STYLING DIENSTLEISTUNG */
@@ -326,12 +429,13 @@ nav :hover{
 
 h1.ueberschrift{
   margin-top: 2%;
-  margin-bottom: 2%;
 }
 
+.container_about_normal{
+  width: 91.66667%;
+}
 .sectionrow_about{
   justify-content: space-around;
-  width: 91.66667%;
   margin-bottom: 2%;
   margin-top: 2%;
 }
@@ -357,14 +461,51 @@ h1.ueberschrift{
   margin-top: 100%;
 }
 
-.argument_1{
-  margin-top: -2.5%;
-}
-
 .sectionrow_about_text{
   justify-content: space-around;
-  width: 91.66667%;
   margin-bottom: 2%;
+}
+
+.container_about_mobile{
+  width: 90%;
+}
+
+.container_about_mobile .argument_right p, .container_about_mobile .argument_left p{
+  font-size: 15px;
+}
+
+.container_about_mobile ul{
+  list-style: circle;
+}
+
+.argument_right ul{
+  margin-left: 8%;
+}
+
+.argument_left ul{
+  margin-left: 7%;
+}
+
+.circle_right{
+  margin-right: 5%;
+}
+
+@media(max-width: 900px){
+  .argument p{
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 601px){
+  .container_about_mobile{
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .container_about_normal{
+    display: none;
+  }
 }
 
 /* ALLGEMEINES STYLING TEAM */
@@ -495,9 +636,12 @@ h1.ueberschrift{
   height: 3%;
 }
 
+
+
 .h1_border_bottom_kontakt{
   border-bottom: #FFFFFF 1px solid;
   height: 0;
+  margin-top: -4.4%;
 }
 
 .darkblue_bg{
