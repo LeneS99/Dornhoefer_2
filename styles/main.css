@@ -470,7 +470,7 @@ h1.ueberschrift{
   width: 90%;
 }
 
-.container_about_mobile .argument_right p, .container_about_mobile .argument_left p{
+.container_about_mobile .argument_right p{
   font-size: 15px;
 }
 
@@ -480,10 +480,6 @@ h1.ueberschrift{
 
 .argument_right ul{
   margin-left: 8%;
-}
-
-.argument_left ul{
-  margin-left: 7%;
 }
 
 .circle_right{
@@ -505,6 +501,15 @@ h1.ueberschrift{
 @media (max-width: 600px) {
   .container_about_normal{
     display: none;
+  }
+
+  .blue_bg{
+    width: 15%;
+    padding-bottom: 15%;
+  }
+
+  .white_border{
+    padding-bottom: 66%;
   }
 }
 
@@ -635,8 +640,6 @@ h1.ueberschrift{
   color: white;
   height: 3%;
 }
-
-
 
 .h1_border_bottom_kontakt{
   border-bottom: #FFFFFF 1px solid;
