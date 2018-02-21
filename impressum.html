@@ -1,5 +1,11 @@
 <!-- DOCTYPE html -->
 <head>
+  <meta charset="utf-8">
+  <!-- Metadaten für SEO -->
+  <title>Dornhöfer | Merchandising | Projektmanagement | Logistik</title>
+  <meta name="description" content="Merchandising und In-Store-Services in Deutschland und Europa. Wir unterstützen internationale  TOP-Marken bei Ihrem Auftritt am POS."> <!-- BESCHREIBUNG DER DIENSTLEISTUNG HIER EINFÜGEN -->
+  <meta name="keywords" content="merchandising, rollout, projektmanagement, in-store-service, field-service, point of sale, POS, POS-service, logistik, promotion, lagerhaltung, pick & pack, visual merchandising, dekoration, schaufenster-dekoration">
+
   <!-- Metadaten für eine responsive Webseite -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
@@ -10,9 +16,11 @@
   <!-- externe CSS Stylesheets (bspw. GoogleFonts)-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.0/gridlex.min.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!--  eigenes CSS Stylesheet -->
   <link href="styles/main.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,14 +31,14 @@
         <i class="fa fa-bars fa 2x"></i>
       </div>
       <div class="logo">
-        <img src="images/logo.jpg" alt="">
+        <a href="../Dornhoefer_2/index.html#home"><img src="images/logo.jpg" alt=""></a>
       </div>
       <div class="menu">
         <ul>
-          <li><a href="../index.html/#leistungen" class="slide-section">Leistungen</a></li>
-          <li><a href="/index.html/#überuns" class="slide-section">Über uns</a></li>
-          <li><a href="index.html/#referenzen" class="slide-section">Referenzen</a></li>
-          <li><a href="#kontakt" class="slide-section">Kontakt</a></li>
+          <li><a href="../Dornhoefer_2/index.html#leistungen" class="slide-section">Leistungen</a></li>
+          <li><a href="../Dornhoefer_2/index.html#überuns" class="slide-section">Über uns</a></li>
+          <li><a href="../Dornhoefer_2/index.html#referenzen" class="slide-section">Referenzen</a></li>
+          <li><a href="../Dornhoefer_2/index.html#kontakt" class="slide-section">Kontakt</a></li>
         </ul>
       </div>
     </nav>
@@ -53,4 +61,22 @@
       <a href="#">Impressum</a>
     </div>
   </footer>
+
+  <!-- Scripte -->
+  <!-- Jquery -->
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="script.js">
+
+  </script>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing")
+      });
+    });
+
+  </script>
+
 </body>
