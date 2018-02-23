@@ -83,6 +83,11 @@ a{
   line-height: 1.8;
 }
 
+li{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #383838;
+}
+
 section{
 
 }
@@ -279,19 +284,40 @@ nav :hover{
 }
 
 .beschreibung_text p, .beschreibung_text ul{
-  padding: 3%;
-  text-align: center;
+  padding: 1% 6% 0% 6%;
   font-size: 18px;
 }
 
+.beschreibung_text ul{
+  list-style: circle;
+  height: 74%;
+  overflow-y: scroll;
+}
+
+.beschreibung_text ul li ul{
+  list-style: circle;
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
+
+.pman p{
+  padding: 3% 6%;
+}
+
+.pman ul{
+  overflow: hidden;
+  height: auto;
+}
+
 @media (max-width: 1169px){
-  .beschreibung_text p{
+  .beschreibung_text ul{
     font-size: 17px;
   }
 }
 
 @media (max-width: 990px) {
-  .beschreibung_text p{
+  .beschreibung_text ul{
     font-size: 15.5px;
   }
 
@@ -314,7 +340,7 @@ nav :hover{
     margin-top: 3%;
   }
 
-  .beschreibung_text p{
+  .beschreibung_text ul{
     font-size: 14px;
   }
 
@@ -344,7 +370,7 @@ nav :hover{
     margin-top: 0%;
   }
 
-  .beschreibung_text p{
+  .beschreibung_text ul{
     font-size: 15px;
   }
 }
@@ -374,15 +400,31 @@ nav :hover{
     font-size: 18px;
   }
 
-  .beschreibung_text p{
+  .beschreibung_text ul{
+    padding: 3% 6% 0% 6%;
     font-size: 15px;
+  }
+  .beschreibung_text ul li ul{
+    padding: 0% 6%;
+    list-style: circle;
+    overflow: hidden;
+    height: auto;
+    width: auto;
   }
 
 }
 
 @media(max-width: 486px){
-  .beschreibung_text p{
+  .beschreibung_text ul{
+    padding: 7% 6% 0% 6%;
     font-size: 13.5px;
+  }
+  .beschreibung_text ul li ul{
+    padding: 0% 6%;
+    list-style: circle;
+    overflow: hidden;
+    height: auto;
+    width: auto;
   }
 }
 
