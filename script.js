@@ -13,5 +13,9 @@ $(document).ready(function() {
 
     e.preventDefault();
   });
-  
+
+});
+
+$('#hideshow').click(function() {
+  $('#gallery-container').toggle();
 });
